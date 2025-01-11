@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro Completo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-section {
+            display: none;
+        }
+
+        .form-section.current {
+            display: block;
+        }
+
+        body {
+            background-image: url('./images/carousel/333.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Fondo blanco con transparencia */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="imagen"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Formulario de Registro Completo</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="registroForm">
+                            <!-- Primera Sección: Crear Cuenta -->
+                            <div class="form-section current">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="apellido">Apellido:</label>
+                                    <input type="text" id="apellido" name="apellido" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico:</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Número de celular:</label>
+                                    <input type="tel" id="telefono" name="telefono" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="direccion">Dirección:</label>
+                                    <input type="text" id="direccion" name="direccion" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ciudad">Ciudad:</label>
+                                    <select id="ciudad" name="ciudad" class="form-control" required>
+                                        <option value="">Selecciona una ciudad</option>
+                                        <option value="potosi">Potosí</option>
+                                        <option value="la_paz">La Paz</option>
+                                        <option value="santa_cruz">Santa Cruz</option>
+                                        <option value="cochabamba">Cochabamba</option>
+                                        <option value="oruro">Oruro</option>
+                                        <option value="chuquisaca">Chuquisaca</option>
+                                        <option value="tarija">Tarija</option>
+                                        <option value="pando">Pando</option>
+                                        <option value="beni">Beni</option>
+                                        <!-- Agrega más opciones según sea necesario -->
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-primary next">Siguiente</button>
+                            </div>
+                            <!-- Segunda Sección: Elegir Premio de Interés -->
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label for="premio">Premio de Interés:</label>
+                                    <select id="premio" name="premio" class="form-control" required>
+                                        <option value="">Selecciona un premio</option>
+                                        <option value="viaje">Viaje</option>
+                                        <option value="dinero">Dinero</option>
+                                        <option value="electrodomestico">Electrodoméstico</option>
+                                        <!-- Agrega más opciones según sea necesario -->
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-secondary prev">Anterior</button>
+                                <button type="button" class="btn btn-primary next">Siguiente</button>
+                            </div>
+                            <!-- Tercera Sección: Métodos de Participación -->
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label for="metodo">Método de Participación:</label>
+                                    <select id="metodo" name="metodo" class="form-control" required>
+                                        <option value="">Selecciona un método</option>
+                                        <option value="compra">Compra</option>
+                                        <option value="referencia">Referencia</option>
+                                        <option value="redes_sociales">Redes Sociales</option>
+                                        <!-- Agrega más opciones según sea necesario -->
+                                    </select>
+                                </div>
+                                <button type="button" class="btn btn-secondary prev">Anterior</button>
+                                <button type="button" class="btn btn-primary next">Siguiente</button>
+                            </div>
+                            <!-- Cuarta Sección: Confirmación -->
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <label for="confirm_nombre">Nombre:</label>
+                                    <input type="text" id="confirm_nombre" name="confirm_nombre" class="form-control"
+                                        readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_apellido">Apellido:</label>
+                                    <input type="text" id="confirm_apellido" name="confirm_apellido"
+                                        class="form-control" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_email">Correo electrónico:</label>
+                                    <input type="email" id="confirm_email" name="confirm_email" class="form-control"
+                                        readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_telefono">Número de celular:</label>
+                                    <input type="tel" id="confirm_telefono" name="confirm_telefono" class="form-control"
+                                        readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_direccion">Dirección:</label>
+                                    <input type="text" id="confirm_direccion" name="confirm_direccion"
+                                        class="form-control" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_ciudad">Ciudad:</label>
+                                    <input type="text" id="confirm_ciudad" name="confirm_ciudad" class="form-control"
+                                        readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_premio">Premio de Interés:</label>
+                                    <input type="text" id="confirm_premio" name="confirm_premio" class="form-control"
+                                        readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirm_metodo">Método de Participación:</label>
+                                    <input type="text" id="confirm_metodo" name="confirm_metodo" class="form-control"
+                                        readonly>
+                                </div>
+                                <button type="button" class="btn btn-secondary prev">Anterior</button>
+                                <button type="submit" class="btn btn-success">Confirmar Registro</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var currentSection = 0;
+            var sections = $(".form-section");
+
+            function showSection(index) {
+                sections.removeClass("current").eq(index).addClass("current");
+            }
+
+            $(".next").click(function () {
+                if (currentSection < sections.length - 1) {
+                    currentSection++;
+                    showSection(currentSection);
+                    if (currentSection === sections.length - 1) {
+                        // Copiar datos a la sección de confirmación
+                        $("#confirm_nombre").val($("#nombre").val());
+                        $("#confirm_apellido").val($("#apellido").val());
+                        $("#confirm_email").val($("#email").val());
+                        $("#confirm_telefono").val($("#telefono").val());
+                        $("#confirm_direccion").val($("#direccion").val());
+                        $("#confirm_ciudad").val($("#ciudad option:selected").text());
+                        $("#confirm_premio").val($("#premio option:selected").text());
+                        $("#confirm_metodo").val($("#metodo option:selected").text());
+                    }
+                }
+            });
+
+            $(".prev").click(function () {
+                if (currentSection > 0) {
+                    currentSection--;
+                    showSection(currentSection);
+                }
+            });
+
+            $("#registroForm").submit(function (event) {
+                event.preventDefault();
+                // Aquí puedes agregar la lógica para manejar el envío del formulario
+                alert("Formulario enviado");
+                // Volver a la primera sección
+                currentSection = 0;
+                showSection(currentSection);
+                // Limpiar el formulario
+                $("#registroForm")[0].reset();
+            });
+
+            showSection(currentSection);
+        });
+    </script>
+    <div class="row mt-3">
+        <div class="col-12 text-center"> <a href="menuxml.html" class="btn btn-secondary">Inicio</a> </div>
+    </div>
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2025 Sorteo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

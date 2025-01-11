@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>    
+    <item>
+        <nombre>Inicio</nombre>
+        <link>menuxml.html</link>
+    </item>
+    <item>
+        <nombre>Registro</nombre>
+        <link>registro.html</link>
+    </item>
+    <item>
+        <nombre>Premios</nombre>
+        <link>premios.html</link>
+    </item>
+    <item>
+        <nombre>Sorteos Pasados</nombre>
+        <link>sorteos_pasados.html</link>
+    </item>
+    <item>
+        <nombre>Reglas y Políticas</nombre>
+        <link>reglas_y_políticas.html</link>
+    </item>
+    <item>
+        <nombre>Consejos para Ganar</nombre>
+        <link>consejos.html</link>
+    </item>
+    <item>
+        <nombre>FAQ</nombre>
+        <link>faq.html</link>
+    </item>
+    <item>
+        <nombre>Contacto</nombre>
+        <link>contacto.html</link>
+    </item>
+</menu>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tabla JSON</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Tabla JSON</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tabla de Datos</h2>
+            <table id="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas dinámicas -->
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulario</h2>
+            <form id="formulario">
+                <input type="hidden" id="indice" value="">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" required>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" required>
+                <button type="submit">Guardar</button>
+                <button type="button" id="cancelar">Cancelar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Gestión de Tabla JSON. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
