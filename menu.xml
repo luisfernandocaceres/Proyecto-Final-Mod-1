@@ -2,7 +2,7 @@
 <menu>    
     <item>
         <nombre>Inicio</nombre>
-        <link>menuxml.html</link>
+        <link>index.html</link>
     </item>
     <item>
         <nombre>Registro</nombre>
